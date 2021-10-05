@@ -1,0 +1,211 @@
+body {
+    background: #ffb703;
+    font-family: "Nunito", sans-serif;
+    padding-top: 55px;
+}
+*/
+/* navbar in layout page */
+.navbar .nav-item .nav-link, .navbar-brand {
+    font-size: 1.25rem;
+    color: white;
+}
+.navbar div ul {
+    list-style: none;
+    color: #fff;
+}
+.navbar div ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar:hover{
+    color: #EA1C2C;
+}
+
+/* navbar ABOUT sub-menu-about */
+.sub-menu-about {
+    display: none;
+}
+.sub-menu-program {
+    display: none;
+}
+
+.navbar .sub-menu-resource {
+	display: none;
+}
+
+.sub-menu-children {
+	display: none;
+}
+.sub-menu-family {
+	display: none;
+
+}
+
+
+/* navbar when hovering above the button About */
+.navbar div ul li:hover .sub-menu-about {
+    display: block;
+    position: absolute;
+    background: #ff9f1c;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.navbar div ul li:hover .sub-menu-program {
+    display: block;
+    position: absolute;
+    background: #ff9f1c;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+.hover-me:hover .sub-menu-resource {
+    display: block;
+    position: absolute;
+    background: #ff9f1c;
+    margin-top: -40px;
+    margin-left: 140px;
+}
+.hover-me:hover .sub-menu-children {
+    display: block;
+    position: absolute;
+    background: #ff9f1c;
+    margin-top: -40px;
+    margin-left: 140px;
+}
+.hover-me:hover .sub-menu-family {
+    display: block;
+    position: absolute;
+    background: #ff9f1c;
+    margin-top: -40px;
+    margin-left: 140px;
+}
+.navbar div ul li:hover .sub-menu-about ul {
+	display: block;
+	margin: 10px;
+}
+
+.navbar div ul li:hover .sub-menu-program ul {
+	display: block;
+	margin: 10px;
+}
+
+
+.navbar div ul li:hover .sub-menu-about ul li {
+	width: 175px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navbar div ul li:hover .sub-menu-program ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.navbar div ul li:hover .sub-menu-about ul li a:hover {
+	color: red;	
+}
+.navbar div ul li:hover .sub-menu-program ul li a:hover {
+	color: red;	
+}
+
+.navbar div ul li:hover .sub-menu-about ul li:last-child {
+	border-bottom: none;
+}
+
+.navbar div ul li:hover .sub-menu-program ul li:last-child {
+	border-bottom: none;
+}
+/*
+.navbar-toggler {
+color: red;
+}
+*/
+
+/* space between icons and button names in layout page */
+.fas {
+    margin-left: 8px;
+}
+
+.nav-link {
+    border: 1px solid red;
+}
+
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    padding-bottom: 40px; 
+    color: black;
+}
+
+.navbar.scrolled {
+    background: #81b29a;
+    transition: background 500ms;
+}
+
+#container, #container-bottom {
+	background-color: #9e2a2b;	
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+
+#container div  {
+	width: 250px;	
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+#container-bottom {
+	color: white;
+}
+#div-program {
+	padding-top: 60px;
+}
+#div-program div {
+	border: 1px solid black;
+	
+}
+
+.blurb h2 {
+	color: #9e2a2b;
+}
+.img-fluid {
+    padding-bottom: 50px;
+}
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+        
+    }
+}
+
+@media (max-width: 768px){
+	#navbar {
+		background: #81b29a;
+	}
+
+	#container, #container-bottom {
+	display: block;
+	flex-direction: column;
+	color: yellow;
+	}
+	
+}
+

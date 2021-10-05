@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <th:block th:insert="layout :: headerStuff"></th:block>
+</head>
+<body>
+<!-- Navbar -->
+<nav th:replace="layout :: navlinks"></nav>
+
+
+<h1>THIS IS THE BODY OF INDEX PAGE</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div th:replace="layout :: footer"></div>
+<div th:replace="layout :: footer-scripts"></div>
+</body>
+</html>

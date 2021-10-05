@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <th:block th:fragment="headerStuff">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/69e5f61610.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/app.css">
+    </th:block>
+    <meta charset="UTF-8">
+    <title>layout</title>
+</head>
+
+<body>
+<!--fragment navbar-->
+<div th:fragment="navlinks">
+    <nav class="navbar navbar-expand-md py-0 fixed-top">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto" style="border: 1px solid black">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">EAFRC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/}"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About<i class="fas fa-sort-down"></i></a>
+                        <div class="sub-menu-about">
+                            <ul>
+                                <li><a th:href="@{/mission}">Mission & Vision</a></li>
+                                <li><a th:href="@{/accomplishments}">Accomplishments</a></li>
+                                <li><a th:href="@{/contact-us}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programs<i class="fas fa-sort-down"></i></a>
+                    <div class="sub-menu-program">
+                        <ul>
+                            <li class="hover-me"><a href="#">Resource<i class="fas fa-angle-right"></i></a>
+                                <div class="sub-menu-resource">
+                                    <ul>
+                                        <li><a th:href="@{/education}">Education</a></li>
+                                        <li><a th:href="@{/job}">Job</a></li>
+                                        <li><a th:href="@{/medical}">Medical</a></li>
+                                        <li><a th:href="@{/legal}">Legal</a></li>
+                                        <li><a th:href="@{/housing}">Housing</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="hover-me"><a href="#">Children<i class="fas fa-angle-right"></i></a>
+                                <div class="sub-menu-children">
+                                    <ul>
+                                        <li><a th:href="@{/school-info}">School Info</a></li>
+                                        <li><a th:href="@{/mentorship}">Mentorship</a></li>
+                                        <li><a th:href="@{/health}">Health</a></li>
+                                        <li><a th:href="@{/volunteer}">Volunteer</a></li>
+                                        <li><a th:href="@{/motivation}">Motivation</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="hover-me"><a href="#">Family<i class="fas fa-angle-right"></i></a>
+                                <div class="sub-menu-family">
+                                    <ul>
+                                        <li><a th:href="@{/marriage}">Marriage</a></li>
+                                        <li><a th:href="@{/parenting}">Parenting</a></li>
+                                        <li><a th:href="@{/counseling}">Counseling</a></li>
+                                        <li><a th:href="@{/women}">Women</a></li>
+                                        <li><a th:href="@{/mental-health}">Mental Health</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/admin}">Admin</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto"  style="border: 1px solid black" href="#">Welcome</a>
+            <button class="navbar-toggler" aria-label="Toggle navigation" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" style="border: 1px solid black">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/logout}">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div   th:fragment="footer">&copyCopyright EAFR-2021 </div>
+
+
+<div   th:fragment="footer-scripts">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</div>
+
+
+</body>
+</html>

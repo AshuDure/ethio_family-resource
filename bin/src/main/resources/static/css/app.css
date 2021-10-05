@@ -1,0 +1,90 @@
+body {
+    background: #ffb703;
+    font-family: "Nunito", sans-serif;
+    padding-top: 55px;
+}
+*/
+/* navbar in layout page */
+.navbar .nav-item .nav-link, .navbar-brand {
+    font-size: 1.25rem;
+    color: white;
+}
+.navbar div ul {
+    list-style: none;
+    color: #fff;
+}
+.navbar div ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar:hover{
+    color: #EA1C2C;
+}
+
+/* navbar ABOUT sub-menu-about */
+.sub-menu-about {
+    display: none;
+}
+
+.sub-menu-program {
+    display: none;
+}
+.sub-menu-resource, .sub-menu-children, .sub-menu-family {
+	display: none;
+
+}
+/* navbar when hovering above the button About */
+.navbar div ul li:hover .sub-menu-about {
+    display: block;
+    position: absolute;
+    background: #ff9f1c;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.navbar div ul li:hover .sub-menu-about ul {
+	display: block;
+	margin: 10px;
+}
+
+.navbar div ul li:hover .sub-menu-program ul {
+	display: block;
+	margin: 10px;
+}
+
+
+.navbar div ul li:hover .sub-menu-about ul li {
+	width: 175px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navbar div ul li:hover .sub-menu-program ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+
+.navbar div ul li:hover .sub-menu-about ul li:last-child {
+	border-bottom: none;
+}
+
+.navbar-toggler {
+color: red;
+}
+/* space between icons and button names in layout page */
+.fas {
+    margin-right: 8px;
+}
+
+.nav-link {
+    border: 1px solid red;
+}
